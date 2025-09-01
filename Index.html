@@ -14,38 +14,51 @@
   <section class="landing">
     <div class="landing-ctn">
     <div class="landing-text">
-    <h1>Hi, I'm Opeyemi — A Full-Stack Web & Mobile Developer</h1>
+    <h2>Hi, I'm Opeyemi A Full-Stack Web & Mobile Developer</h1>
     <p>I transform ideas into reality by creating modern, responsive, and high-performance websites and mobile apps using React.js, React Native, and cutting-edge technologies.</p>
     <p><strong>Tech Stack:</strong> HTML • CSS • JavaScript • React • Node.js • PHP • MySQL</p>
     <button onclick="showMessage()">Get Started</button>
     <a href="#projects" class="btn">View My Work</a>
-    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    <a href="#contact" class="btn">Get in Touch</a>
     </div>
 
     <div class="landing-text2">
+      <img src="images/Untitleddesign.jpg" alt="Profile" class="circle-image">
     </div>
     </div>
 
-  <section class="aboutsct">
-  <div class="col-img"></div>
-  <div class="about-col">
-    <h2>About Me</h2>
-    <h3>Full-Stack Developer</h3>
+<section id="aboutsct" class="aboutsct">
+  <div class="about-header">
+    <h1>Who I Am</h1>
     <p>
-      I specialize in building modern, scalable, and user-friendly web and mobile applications.  
-      With expertise in React.js, React Native, Node.js, PHP, and MySQL, I create solutions that help businesses grow and thrive in the digital world.
+      Passionate about building modern web and mobile applications that are 
+      efficient, scalable, and user-friendly.
     </p>
+  </div>
 
-    <h2>My Vision</h2>
-    <p>
-      To be recognized globally as a leading full-stack development team,
-      building creative solutions that empower people and organizations.
-    </p>
-<a href="#about" class="btn">View more</a>
-    
+  
+  <div class="about-row">
+    <div class="col-img"></div>
+
+    <div class="about-col">
+      <h2>About Me</h2>
+      <h3>Full-Stack Developer</h3>
+      <p>
+        I specialize in building modern, scalable, and user-friendly web and mobile applications.  
+        With expertise in React.js, React Native, Node.js, PHP, and MySQL, I create solutions that help businesses grow and thrive in the digital world.
+      </p>
+
+      <h2>My Vision</h2>
+      <p>
+        To be recognized globally as a leading full-stack development team,
+        building creative solutions that empower people and organizations.
+      </p>
+      <a href="#about" class="btn">View more</a>
+    </div>
   </div>
 </section>
 
+ <!-- Service Section -->
 <section id="services" class="services">
   <h2>My Services</h2>
   <p class="intro">I provide end-to-end web and mobile solutions tailored to your needs.</p>
@@ -66,7 +79,7 @@
       <p>
         Creating cross-platform mobile applications with React Native that deliver seamless user experiences.
       </p>
-      <a href="#contact" class="btn btn-s">View More</a>
+      <a href="#contact" class="btn">View More</a>
     </div>
 
     <div class="service-box">
@@ -74,12 +87,13 @@
       <p>
         Designing and customizing WordPress websites with Elementor for businesses, schools, and organizations.
       </p>
-      <a href="#contact" class="btn btn-s">View More</a>
+      <a href="#contact" class="btn ">View More</a>
     </div>
 
   </div>
 </section>
 
+<!-- Skills Section -->
 <section id="skills" class="skills">
   <h2>My Skills</h2>
   <p class="intro">Here are the technologies and tools I work with to build modern web and mobile applications.</p>
@@ -99,13 +113,14 @@
   </div>
 </section>
 
+<!-- Latest Project Section -->
 <section id="projects" class="projects">
   <h2>Latest Projects</h2>
   <p class="intro">Here are some of the recent projects I’ve worked on.</p>
 
   <div class="projects-container">
     <div class="project-card">
-      <img src="images/Web.webp" alt="Project 1 Screenshot">
+      <img src="images/Mypics.jpg" alt="Project 1 Screenshot">
       <div class="project-info">
         <h3>School Website</h3>
         <p>A responsive school management website built with WordPress and Elementor, featuring event updates and student portal integration.</p>
@@ -115,7 +130,7 @@
 
   
     <div class="project-card">
-      <img src="images/Web.webp" alt="">
+      <img src="images/Mypics.jpg" alt="">
       <div class="project-info">
         <h3>Blog Platform</h3>
         <p>A full-stack blog application built with React.js, Node.js, and MySQL, allowing users to create and manage posts.</p>
@@ -125,7 +140,7 @@
 
    
     <div class="project-card">
-      <img src="images/Web.webp" alt="Project">
+      <img src="images/Mypics.jpg" alt="Project">
       <div class="project-info">
         <h3>Mobile App</h3>
         <p>A cross-platform mobile app developed with React Native for seamless performance on Android and iOS.</p>
@@ -136,27 +151,28 @@
   </div>
 </section>
 
+
+<!-- Contact Section -->
 <section id="contact" class="contact">
   <h2>Contact Me</h2>
   <p class="intro">Have a project in mind or want to work together? Let's connect!</p>
 
   <div class="contact-container">
-    
-   
     <div class="contact-info">
-      <p>I’d love to hear from you! Whether you have a question, a project idea, 
-    or just want to say hello, feel free to reach out. I’ll get back to you 
-    as soon as possible.</p>
+      <p>
+        I’d love to hear from you! Whether you have a question, a project idea,
+        or just want to say hello, feel free to reach out. I’ll get back to you
+        as soon as possible.
+      </p>
     </div>
 
- 
-    <form class="contact-form" action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
+    <form class="contact-form" id="contactForm">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+<p id="formMessage" style="color: #f39c12; display: none;">Message sent successfully!</p>
   </div>
 </section>
 
