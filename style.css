@@ -17,7 +17,6 @@ body {
   background: #333;
   color: #ffffff;
   padding: 1% 5%;
-
 }
 .navbar {
   display: flex;
@@ -47,7 +46,6 @@ body {
   color: #f39c12;
   text-decoration: none;
 }
-
 
 .nav-links.mobile {
   flex-direction: column;
@@ -194,7 +192,7 @@ body {
 
 .col-img {
   flex: 1 1 300px;
-  background: url("images/Web.webp") no-repeat center center;
+  background: url("images/Mypics.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 8px;
   min-height: 300px;
